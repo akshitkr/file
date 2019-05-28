@@ -1,0 +1,236 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Space Origin</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+        <link rel="stylesheet" href='css/helpers.css'>
+        <style>
+
+
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.parallax3 { 
+
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/iss043-e-86375.jpg");
+
+
+   
+
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax2 { 
+  /* The image used */
+  background-image: url("https://boygeniusreport.files.wordpress.com/2016/05/spacex-falcon-9-takeoff-may-27th.jpg?quality=98&strip=all&w=782");
+
+  /* Set a specific height */
+   
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("https://img.wallpapersafari.com/desktop/1600/900/23/77/DP60WY.jpeg");
+
+  /* Set a specific height */
+   
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero1 {
+    background: black url(https://img.wallpapersafari.com/desktop/1600/900/23/77/DP60WY.jpeg) center / cover;}
+
+html {
+  scroll-behavior: smooth;
+ }
+ 
+a {
+  text-decoration: none;
+  color: black;
+ } 
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "a a a "
+        "b c d ";
+
+    grid-row-gap: 1rem;
+}
+
+@media (max-width: 512px) {
+    #grid {
+        grid-template-areas:
+            "a a a"
+            "b c d"
+            "e e e";
+    }
+}
+
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Abel', sans-serif;
+
+ 
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+<!-- .hero -->
+
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+
+
+
+
+<section class="hero hero1 is-fullheight">
+
+<!-- .hero-head -->
+
+<!-- /.hero-head -->
+<nav id="navbar" class="hero-head">
+  <div class="columns parallax is-mobile is-marginless heading has-text-weight-bold">
+    <div class="column left">
+      <a href="https://www.w3schools.com" style="font-family: 'Raleway', sans-serif;"class="navbar-item has-text-white">SpaceOrigin</a>
+    </div>
+    <div class="column center desktop">
+      <p class="navbar-item has-text-black"></p>
+
+    </div>
+    <div class="column right">
+      <p class="navbar-item desktop has-text-black desktop">SHOP   </p>
+      <p class="navbar-item desktop has-text-black desktop">SIGN IN</p>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+      <figure class="navbar-item image">
+        <i class="fas fa-3x fa-bars has-text-white"
+          style="width: 1rem; height: 1rem;"></i>
+      </figure>
+    </div>
+  </div>
+</nav>
+
+<!-- .hero-body -->
+<header class="hero-body parallax">
+    <div class="is-overlay has-text-centered" style="top: 82px;font-family: 'Questrial', sans-serif;">
+
+        <h1 class="subtitle is-4 has-text-white">On Your Way to</h1>
+        <h2 class="title is-1 has-text-white">Andromeda</h2>
+        
+       	<h3 class="subtitle is-4 has-text-white">Welcome {{user.username}}!<br>You're one of the few to get a ticket to the first Spotel in the world!<br>The departure date is 11-10-2040<br> Your ticket has been booked on Falcon 1-20367 which will depart from Cape Canevarel, USA<br>You'll receive other information on your email : {{user.email}}<br>Thank You for <i>soaring</i> with Space Origin!</h3>
+    </div>
+    <div class="has-text-centered">
+        
+    </div>
+    
+</header>
+<!-- .hero-body -->
+
+
+
+
+
+    </body>
+</html>
+{% block head %}
+
+<title>Profile</title>
+
+{% endblock %}
+
+{%block body%}
+
+{{user}}
+
+<div class='container'>
+<p>
+	Good Morning {{user.first_name}}! Your Favourite fruit is {{user.profile.zip_code}}
+
+
+
+
+
+</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+	<title>SignUp</title>
+</head>
+
+
+
+
+{% block content %}
+  <h2 style="font-family: 'Questrial', color:'white">Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    <table border="1">
+    {{ form.as_p }}
+	</table>
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}
