@@ -2,9 +2,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hello Bulma!</title>
+        <title>Space Origin</title>
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -40,9 +44,93 @@
   right: 0;
 }
 
-.hero {
-    background: black url(https://img.wallpapersafari.com/desktop/1600/900/23/77/DP60WY.jpeg) center / cover;
+
+
+.parallax3 { 
+
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/iss043-e-86375.jpg");
+
+
+   
+
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+.parallax2 { 
+  /* The image used */
+  background-image: url("https://boygeniusreport.files.wordpress.com/2016/05/spacex-falcon-9-takeoff-may-27th.jpg?quality=98&strip=all&w=782");
+
+  /* Set a specific height */
+   
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("https://img.wallpapersafari.com/desktop/1600/900/23/77/DP60WY.jpeg");
+
+  /* Set a specific height */
+   
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero1 {
+    background: black url(https://img.wallpapersafari.com/desktop/1600/900/23/77/DP60WY.jpeg) center / cover;}
+
+html {
+  scroll-behavior: smooth;
+ }
+ 
+a {
+  text-decoration: none;
+  color: black;
+ } 
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "a a a "
+        "b c d ";
+
+    grid-row-gap: 1rem;
+}
+
+@media (max-width: 512px) {
+    #grid {
+        grid-template-areas:
+            "a a a"
+            "b c d"
+            "e e e";
+    }
+}
+
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Abel', sans-serif;
+
+ 
+
 
 
 
@@ -51,39 +139,63 @@
     <body>
 
 <!-- .hero -->
-<section class="hero is-fullheight">
+
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+
+
+
+
+<section class="hero hero1 is-fullheight">
 
 <!-- .hero-head -->
-<div class="hero-head">
-    <div class="columns is-mobile is-marginless heading has-text-weight-bold">
-        <div class="column left">
-            <p class="navbar-item has-text-white">SPACE ORIGIN</p>
-        </div>
-        <div class="column center desktop">
-            <p class="navbar-item has-text-white">CAPSULE </p>
-            <p class="navbar-item has-text-white">SHIP</p>
-            <p class="navbar-item has-text-white">PALAROOM</p>
-            <p class="navbar-item has-text-white">THE DINER</p>
-            <p class="navbar-item has-text-white">FIGYM </p>
-        </div>
-        <div class="column right">
-            <p class="navbar-item  has-text-white desktop">SHOP     </p>
-            <p class="navbar-item  has-text-white desktop">SIGN IN  </p>
-            <figure class="navbar-item image has-text-white center">
-                <i class="fas fa-bars" style="width: 1rem; height: 1rem;"></i>
-            </figure>
-        </div>
-    </div>
-</div>
-<!-- /.hero-head -->
 
+<!-- /.hero-head -->
+<nav id="navbar" class="hero-head">
+  <div class="columns parallax is-mobile is-marginless heading has-text-weight-bold">
+    <div class="column left">
+      <a href="https://www.w3schools.com" style="font-family: 'Raleway', sans-serif;"class="navbar-item has-text-white">SpaceOrigin</a>
+    </div>
+    <div class="column center desktop">
+      <p class="navbar-item has-text-black"></p>
+
+    </div>
+    <div class="column right">
+      <p class="navbar-item desktop has-text-black desktop">SHOP   </p>
+      <p class="navbar-item desktop has-text-black desktop">SIGN IN</p>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+      <figure class="navbar-item image">
+        <i class="fas fa-3x fa-bars has-text-white"
+          style="width: 1rem; height: 1rem;"></i>
+      </figure>
+    </div>
+  </div>
+</nav>
 
 <!-- .hero-body -->
-<header class="hero-body">
-    <div class="is-overlay has-text-centered" style="top: 82px;">
-        <h1 class="subtitle is-4 has-text-white"></h1>
-        <h2 class="title is-1 has-text-white">Spotel</h2>
-        <a class="button is-link is-inverted is-outlined is-rounded" style="top:20px;"><span>Get Started</span></a>
+<header class="hero-body parallax">
+    <div class="is-overlay has-text-centered" style="top: 82px;font-family: 'Questrial', sans-serif;">
+
+        <h1 class="subtitle is-4 has-text-white">Introducing</h1>
+        <h2 class="title is-1 has-text-white">Andromeda</h2>
+        <a href="#down" class="button is-link is-inverted is-outlined is-rounded is-medium" style="top:2px;"><span>Get Started</span></a>
+       
     </div>
     <div class="has-text-centered">
         
@@ -91,8 +203,91 @@
     
 </header>
 <!-- .hero-body -->
+
+<main class="hero-foot center parallax" style="padding: 2rem;font-family: 'Questrial', sans-serif;">
+  <div id="grid" style="width: 768px;">
+    <div id="a" class="center-column">
+      <p class="has-text-centered has-text-black" style="font-size:23px"><bold>
+        ​<b>"The most exquisite Holiday Destination <i>Ever</i>"</b><br>
+        Time Magazine
+      </bold></p>
+    </div>
+    <div id="b" class="center-column">
+      <p class="title has-text-black">
+        <i class="fas fa-tachometer-alt has-text-black"
+          style="width: 0.75em; height: 0.75em;"></i>
+        11<span class="is-size-5"></span>
+      </p>
+      <p class="subtitle has-text-black is-7">Days</p>
+    </div>
+    <div id="c" class="center-column" style="border-left: 1px solid gray;">
+      <p class="title has-text-black"><span class="is-size-5"></span>55<span class="is-size-5"></span></p>
+      <p class="subtitle is-7 has-text-black">Well Furnished Rooms</p>
+    </div>
+    <div id="d" class="center-column" style="border-left: 1px solid gray;">
+      <p class="title has-text-black">250</span><span class="is-size-5">mi</span></p>
+      <p class="subtitle is-7 has-text-black">Above the Earth</p>
+    </div>
+    
+  </div>
+</main>
+</section>
+
+
+
+<section class="hero is-light is-fullheight has-text-centered">
+  <div id="down" class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        An Experience of A Lifetime
+      </h1>
+      <h2 class="subtitle">
+        Get ready for a really <i>Out of this world</i> journey to the sky. <br> Without compromising on safety and comfort.
+      </h2>
+    </div>
+  </div>
 </section>
 <!-- /.hero -->
+<section class="hero parallax2 is-fullheight has-text-centered">
+  <div id="down" class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Rockets!
+      </h1>
+      <h2 class="subtitle">
+        Get ready for a really <i>Out of this world</i> journey to the sky. <br> Without compromising on safety and comfort.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="hero is-light is-medium has-text-centered">
+  <div id="down" class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        An Experience of A Lifetime
+      </h1>
+      <h2 class="subtitle">
+        Get ready for a really <i>Out of this world</i> journey to the sky. <br> Without compromising on safety and comfort.
+      </h2>
+  
+     <button class="btn" style='border: none;opacity: 0.5;'><i class="fa fa-angle-double-down"></i></button>
+
+</p>
+    </div>
+  </div>
+</section>
+<section class="hero parallax3 is-fullheight has-text-centered has-text-white">
+  <div id="down" class="hero-body">
+    <div class="container has-text-white">
+      <h1 class="title has-text-white">
+        Rockets!
+      </h1>
+      <h2 class="subtitle has-text-white">
+        Get ready for a really <i>Out of this world</i> journey to the sky. <br> Without compromising on safety and comfort.
+      </h2>
+    </div>
+  </div>
+</section>
 
 
 
