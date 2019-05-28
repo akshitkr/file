@@ -27,3 +27,5 @@ cd into the folder directory and run the following commands: </br>
    Akshit Kumar  </br>
    Developer, TEA News Network </br>
    DPS RK Puram </br>
+   For issues with the project, Contact me at : </br>
+   *akshitkumar31102003@gmail.com*
