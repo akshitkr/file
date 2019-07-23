@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // do typed.js stuff
+
+        // Can also be included with a regular script tag
+        import Typed from 'https://cdn.jsdelivr.net/npm/typed.js'
+
+
+        $(document).ready(function() {
+            var options = {
+                strings: ["hope", "family"],
+                typeSpeed: 40
+            }
+            var typed = new Typed("#typing", options);
+        });
+    
+        });
+    </script>
+</head>
+
+<body>
+
+    <span style="font-size:30px; color:#37b34d;cursor:pointer; position: fixed;left: 5vmax; top: 2.5vmax" onclick="openNav()">&#9776;</span>
+
+
+
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 10vmax;
+            left: 0;
+            background-color: #F0FFF0;
+            border-color: aliceblue;
+            border-right-width: thick;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            top: 100px
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 100px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(http://akshitkumar.me/file/iowanoldst-bt/BitstreamIowanOldStyleBoldBT.ttf);
+        }
+
+        <style>. {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url("http://akshitkumar.me/file/70000000019-696x270.jpg");
+
+            /* Set a specific height */
+            height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+
+
+
+
+
+
+    <section class="hero is-fullheight" style="top: 1vmax">
+        <div class="hero-body">
+            <div class="container">
+                <center>
+                    <figure class="image is-rounded is-128x128">
+                        <img class="is-rounded" src="https://scontent.fdel12-1.fna.fbcdn.net/v/t1.0-9/1535559_605690302800822_2019547984_n.png?_nc_cat=111&_nc_oc=AQnZFhtVmLE9gtHD7BXx0JMCAUv37jY4LRKk-hQTCtDIcHYzupH7XIdU3K0MlTgfxeY&_nc_ht=scontent.fdel12-1.fna&oh=5e871ce2f204efd2c4406e71508104e3&oe=5DB9C05F" alt="Smiley face">
+
+                    </figure>
+                    <h1 class="title" style="color: #37b34d; font-family: myFirstFont; font-size: 8vmax; padding: 1vmax">
+                        <strong>
+                            Infinitus Reus 2019</strong>
+                    </h1>
+                    <h2 class="subtitle" style="color: #37b34d; font-family: 'Nunito', sans-serif; font-size: 4vmax">
+                        Do you have what it takes?
+                    </h2>
+                    <a style="background-color: #37b34d; font-family: 'Nunito', sans-serif; bottom: 1vmax" class="button is-rounded has-text-white is-medium" style="top:2px;"><span>Get Started</span></a>
+                </center>
+
+            </div>
+        </div>
+    </section>
+    <div id="mySidenav" class="sidenav is-fixed-top">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Members</a>
+        <a href="#">Registration</a>
+        <a href="#">Contact</a>
+    </div>
+    <section class="hero is-fullheight">
+        <div class="hero-body is fullheight parallax">
+            <div class="container">
+                <h1 class="title" style="font-family: myFirstFont; font-size: 4vmax;color: white; text-align: center">
+                    Introduction
+                </h1>
+                <h2 class="subtitle" style="font-family: 'Nunito', sans-serif; font-size: 2.6vmax; color: white; text-align: center">
+                    Presenting the third edition of Infinitus Reus, the one day quizzing festival hosted by DPS RK Puram's Quizzing Club. It aims at bringing together the best minds in the NCR quizzing circuit for a confluence of competition, brainstorming and entertainment.
+
+
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-fullheight is-primary">
+        <div class="container">
+            <div id="typed-strings">
+                <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+                <p>It <em>types</em> out sentences.</p>
+            </div>
+            <span id="typing">jk</span>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js">
+        // Can also be included with a regular script tag
+        import Typed from 'https://cdn.jsdelivr.net/npm/typed.js'
+
+
+        $(document).ready(function() {
+            var options = {
+                strings: ["hope", "family"],
+                typeSpeed: 40
+            }
+            var typed = new Typed("#typing", options);
+        });
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "150px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body></html>
