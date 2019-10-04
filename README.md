@@ -19,5 +19,5 @@ cd into the folder directory and run the following commands: </br>
    # Credits<br>
    Akshit Kumar
    DPS RK Puram </br>
-   For issues with the project, Contact me [here](  akshitkumar31102003@gmail.com)
+   For issues with the project, Contact me [here](mailto:akshitkumar31102003@gmail.com?Subject=Python%20projecthelp)
  
