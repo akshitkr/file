@@ -23,9 +23,8 @@ cd into the folder directory and run the following commands: </br>
    I also do app development and Game development. I along with some of my friends designed the www.teanewsnetwork.com 2 years ago, but it had to be brought down due to low traffic and less revenue. We are right now working on a newer website called www.critist.com which is scheduled to be complete by August 2019.  </br>
    Please judge my project accordingly. </br>
    
-   # Carpe Diem  </br>
-   Akshit Kumar  </br>
-   Developer, TEA News Network </br>
+   # Credits<br>
+   Akshit Kumar
    DPS RK Puram </br>
    For issues with the project, Contact me at : </br>
    *akshitkumar31102003@gmail.com*
