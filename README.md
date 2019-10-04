@@ -2,8 +2,8 @@
 This is the Django Framework for my site.
 
 # Download 
-To set up and load, install Djangoto your pc or mac using pip. This might work : </br> https://docs.djangoproject.com/en/2.2/topics/install/ </br>
-Now, download the git onto your pc.
+To set up and load, install Django to your pc or mac using pip. This might work : </br> https://docs.djangoproject.com/en/2.2/topics/install/ </br>
+Now, clone the git onto your pc.
 
 # Installation 
 cd into the folder directory and run the following commands: </br>
